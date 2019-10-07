@@ -94,6 +94,21 @@ export default {
       .then(res => res.data)
       .catch(errHandler)
   },
+
+  getMenu() {
+    return service
+      .get('/menu')
+      .then(res => res.data)
+      .catch(errHandler)
+  },
+
+  getReservation() {
+    return service
+      .get('/reservation')
+      .then(res => res.data)
+      .catch(errHandler)
+  },
+
   getAbout() {
     return service
       .get('/aboutus')
