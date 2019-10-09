@@ -21,6 +21,7 @@ export default function Home(props) {
     <>
       <Parallax />
       <Map fullMarkers={true} property={{}} />
+
       {/* <ContactUs {...props} /> */}
 
       {/* <ReactMapGL

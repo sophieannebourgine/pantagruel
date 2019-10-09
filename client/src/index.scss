@@ -109,6 +109,12 @@ a.navbar-brand {
   left: 0;
   min-width: 100%;
   min-height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 5px rgba(99, 110, 114, 0.5);
 }
 
 .square-hp {
@@ -116,9 +122,10 @@ a.navbar-brand {
   // opacity: 0.8;
   min-width: 570px;
   max-width: 770px;
-  min-height: 130px;
-  max-height: 270px;
-  border-radius: 20px;
+  // min-height: 130px;
+  // max-height: 270px;
+  height: 100%;
+  // border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +136,7 @@ a.navbar-brand {
   align-content: center;
   position: relative;
   z-index: -1;
-  border-radius: 20px;
+  // border-radius: 20px;
 }
 .opacity-low {
   position: absolute;
@@ -140,7 +147,6 @@ a.navbar-brand {
   z-index: -1;
   background: #5588a3;
   opacity: 0.6;
-  border-radius: 20px;
 }
 
 .bloc-hp {
@@ -157,7 +163,7 @@ a.navbar-brand {
   // position: absolute;
   // z-index: 999;
   text-align: center;
-  border-radius: 20px;
+  // border-radius: 20px;
 }
 
 .button-view {
@@ -417,6 +423,10 @@ $slide-number: 3;
   &:nth-child(3) {
     background-image: url('/jason-pantagruel.jpg');
   }
+  &:nth-child(4) {
+    width: '600';
+    height: '450';
+  }
 }
 
 /* Set stacking context of slides */
@@ -526,4 +536,10 @@ $slide-number: 3;
 #myBtn:hover {
   background: #ddd;
   color: black;
+}
+
+.content-wraper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
 }

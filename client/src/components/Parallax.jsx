@@ -95,12 +95,16 @@ export default function Parallax() {
           </p>
         </div>
       </section>
+
       <section className="background">
         <div className="content-wrapper">
           <div className="home">
-            <br />
-            <br />
-            <br />
+            <img
+              src="/couteau-pantagruel.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
             <div className="square-hp">
               <div className="opacity-low"></div>
 
@@ -116,27 +120,32 @@ export default function Parallax() {
           </div>
         </div>
       </section>
+
       <section className="background">
         <div className="content-wrapper">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <p className="content-title">Le chef</p>
-          <p className="content-subtitle">Jason Gouzy</p>
-          <div className="buttons">
-            <Link to="/aboutus">
-              <button className="btn btn-primary">Rencontrer l'équipe</button>
-            </Link>
+          <div className="home">
+            <div className="square-hp">
+              <div className="opacity-low"></div>
+
+              <div className="bloc-hp">
+                Le chef{' '}
+                <div className="buttons">
+                  <a href="/aboutus">
+                    <button className="button-view">Rencontrer l'équipe</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="/jason-pantagruel.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+            />
           </div>
         </div>
       </section>
-      {/* <br />
-      <br />
-      <br />
-      <p>Our offer</p> */}
     </div>
   )
 }
