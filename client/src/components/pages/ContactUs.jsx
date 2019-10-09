@@ -32,7 +32,7 @@ export default function ContactUs(props) {
       .then(result => {
         console.log('SUCCESS!')
         console.log(props.history)
-        setMsg('Thank you. Your message has been sent.')
+        setMsg('Merci, votre message a bien été envoyé.')
         props.history.push('/') // Redirect to the home page
       })
       .catch(err => setState({ message: err.toString() }))
@@ -44,20 +44,20 @@ export default function ContactUs(props) {
         <div className="opacity-low-contact"></div>
         <div className="bloc-contact">
           <div className="ContactUs">
-            <h2 className="contact-title">CONTACT US</h2>
+            <h2 className="contact-title">CONTACT</h2>
             <form
               className="form-generic"
               onSubmit={handleClick}
               onChange={handleInputChange}
             >
               <div className="form-group">
-                <label for="InputName">Name</label>
+                <label for="InputName">Nom</label>
                 <input
                   name="name"
                   value={state.name}
                   type="name"
                   className="form-control"
-                  placeholder="Enter your name"
+                  placeholder="Entrez votre nom"
                 />
               </div>
               <div className="form-group">
@@ -68,28 +68,24 @@ export default function ContactUs(props) {
                   value={state.email}
                   type="email"
                   className="form-control"
-                  placeholder="Enter email"
+                  placeholder="Entrez votre email"
                 />
               </div>
 
               <div className="form-group">
-                <label for="FormControlSelect1">Topic</label>
+                <label for="FormControlSelect1">Sujet</label>
                 <select
                   name="topic"
                   className="form-control"
                   // style={{ width: '20%' }}
                 >
-                  <option value="">Select</option>
-                  <option value="Alerts">Alerts</option>
-                  <option value="Real estate search">Real estate search</option>
-                  <option value="Website technical trouble">
-                    Website technical trouble
-                  </option>
-                  <option value="To say you're awesome">
-                    To say you're awesome
-                  </option>
+                  <option value="">Sélectionner</option>
+                  <option value="Resa">Réservation</option>
 
-                  <option>Others</option>
+                  <option value="Alerts">Privatisation</option>
+                  <option value="Real estate search">Evénement</option>
+
+                  <option>Autre</option>
                 </select>
               </div>
 
@@ -110,10 +106,10 @@ export default function ContactUs(props) {
                 type="submit"
                 className="btn btn-primary"
                 onclick={() => {
-                  alert.show('message sent')
+                  alert.show('Message envoyé')
                 }}
               >
-                Submit
+                Envoyer
               </button>
               <div className="msg-submit">{msg}</div>
               {/* </div> */}

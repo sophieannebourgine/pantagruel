@@ -23,21 +23,23 @@ function MainNavbar(props) {
     <nav className="navbar navbar-expand-sm navbar-dark position-fixed mb-4">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       {/* <img src="./../images/WealthySameDoe.webp" className="App-logo" alt="logo" /> */}
-      <img
+      {/* <img
         src="https://res.cloudinary.com/drukuybdj/image/upload/v1569850095/ironhack-project-3/properties/logo_xgzym8.gif"
         className="App-logo"
         alt="logo"
-      />
+      /> */}
       <Link className="navbar-brand" to="/">
-        Parisian Cocoon{' '}
+        <img
+          src="./pantagruel-paris2.png"
+          alt="pantagruel-resto-gastronomique-paris2"
+          width="50px"
+        />{' '}
       </Link>
-
-      {/* <li className="nav-item">
-        <NavLink className="nav-link" to="/">
-          Parisian Cocoon{' '}
+      <div className="nav-item">
+        <NavLink className="nav-link-pantagruel" to="/">
+          pantagruel{' '}
         </NavLink>
-      </li> */}
-
+      </div>
       <button
         className="navbar-toggler"
         type="button"
@@ -50,36 +52,47 @@ function MainNavbar(props) {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-
       <div
         className={'collapse navbar-collapse' + (shown ? ' show' : '')}
         id="navbarSupportedContent"
       >
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/forsale">
-              For Sale
+            <NavLink className="nav-link" to="/">
+              Ouverture du restaurant mi décembre 2019{' '}
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink className="nav-link" to="/forrent">
               For Rent
             </NavLink>
+          </li> */}
+
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/aboutus">
+              A propos{' '}
+            </NavLink>
           </li>
 
-          {/* <li className="nav-item">
-            <NavLink className="nav-link" to="/aboutus">
-              About us{' '}
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/menu">
+              Menu{' '}
             </NavLink>
-          </li>*/}
+          </li>
+
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/reservation">
+              Réservation{' '}
+            </NavLink>
+          </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/contactus">
-              Contact us{' '}
+              Contactez-nous{' '}
             </NavLink>
           </li>
 
-          {api.isLoggedIn() && !api.isAdmin() && (
+          {/* {api.isLoggedIn() && !api.isAdmin() && (
             <li className="nav-item">
               {user._id && (
                 <NavLink className="nav-link" to={`/favorites/${user._id}`}>
@@ -123,7 +136,7 @@ function MainNavbar(props) {
                 Logout
               </Link>
             </li>
-          )}
+          )} */}
           {/* {api.isLoggedIn() && (
             <li className="nav-item">
               <Link className="nav-link" to="/favorites">

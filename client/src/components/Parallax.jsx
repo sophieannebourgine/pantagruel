@@ -76,17 +76,20 @@ export default function Parallax() {
     var $currentSlide = $('.background').eq(currentSlideNumber)
     $currentSlide.removeClass('down-scroll').addClass('up-scroll')
   }
+
   return (
     <div className="container-parallax">
       <section className="background">
-        <br />
-        <br />
-        <br />
         <div className="content-wrapper">
-          <p className="content-title">
-            Welcome to <br></br>
-            Parisian Cocoon
+          <p className="content-subtitle">
+            <img
+              className="logo-home"
+              src="/pantagruel-paris2.png"
+              alt="logo-home"
+              width="250px"
+            />
           </p>
+          <p className="content-title">pantagruel</p>
           <p className="content-subtitle">
             <img className="arrow" src="/arrow.png" alt="arrow" />
           </p>
@@ -102,13 +105,10 @@ export default function Parallax() {
               <div className="opacity-low"></div>
 
               <div className="bloc-hp">
-                What are you looking for?
+                La carte{' '}
                 <div className="buttons">
-                  <a href="/forsale">
-                    <button className="button-view">Buy</button>
-                  </a>
-                  <a href="/forrent">
-                    <button className="button-view">Rent</button>
+                  <a href="/menu">
+                    <button className="button-view">Menu</button>
                   </a>
                 </div>
               </div>
@@ -124,11 +124,11 @@ export default function Parallax() {
           <br />
           <br />
           <br />
-          <p className="content-title">Our team</p>
-          <p className="content-subtitle">Aimée, Aida & Sophie-Anne</p>
+          <p className="content-title">Le chef</p>
+          <p className="content-subtitle">Jason Gouzy</p>
           <div className="buttons">
             <Link to="/aboutus">
-              <button className="btn btn-primary">Meet our team</button>
+              <button className="btn btn-primary">Rencontrer l'équipe</button>
             </Link>
           </div>
         </div>

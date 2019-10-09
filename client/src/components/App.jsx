@@ -13,11 +13,11 @@ import Signup from './pages/Signup'
 import AboutUs from './pages/AboutUs'
 import OneProperty from './pages/OneProperty'
 import EditOne from './pages/EditOne'
-import Map from './pages/Map'
+// import Map from './pages/Map'
 import AddNewProperty from './pages/AddNewProperty'
 import EditProperty from './pages/Edit'
 import Menu from './pages/Menu'
-import Reservation from './pages/reservation'
+import Reservation from './pages/Reservation'
 
 export default function App() {
   return (
@@ -40,7 +40,7 @@ export default function App() {
         {/* <Route path="/delete/:id" component={EditProperty} /> */}
         <Route path="/login" component={Login} />
         <Route path="/secret" component={Secret} />
-        <Route path="/map" component={Map} />
+        {/* <Route path="/map" component={Map} /> */}
         <Route path="/menu" component={Menu} />
         <Route path="/reservation" component={Reservation} />
 
