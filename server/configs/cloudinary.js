@@ -11,8 +11,8 @@ cloudinary.config({
 
 const storage = cloudinaryStorage({
   cloudinary: cloudinary,
-  folder: 'ironhack-project-3',
-  allowedFormats: ['jpg', 'png'],
+  folder: 'restaurant-pantagruel',
+  allowedFormats: ['jpg', 'png', 'gif'],
   filename: (req, file, cb) => {
     cb(null, file.originalname) // The file on cloudinary would have the same name as the original file name
   },
