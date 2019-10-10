@@ -38,12 +38,12 @@ $primary: #1c698a;
   }
 }
 
-.content-title {
+.content-title.pantagruel {
   font-family: 'Diplomata', cursive;
   color: black;
   text-transform: lowercase;
   font-weight: 200;
-  font-size: 0.2rem;
+  font-size: 8vw;
 }
 
 .nav-link-pantagruel {
@@ -542,4 +542,17 @@ $slide-number: 3;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
+}
+
+.map-pantagruel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  // height: calc(100vh - (84px));
+  height: 100vh;
+  padding-top: 80px;
+  background-color: #5588a3;
 }

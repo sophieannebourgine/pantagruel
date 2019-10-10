@@ -89,7 +89,7 @@ export default function Parallax() {
               width="250px"
             />
           </p>
-          <p className="content-title">pantagruel</p>
+          <p className="content-title pantagruel">pantagruel</p>
           <p className="content-subtitle">
             <img
               className="arrow"

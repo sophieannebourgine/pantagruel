@@ -8,10 +8,7 @@ router.get('/secret', isLoggedIn, (req, res, next) => {
     user: req.user,
   })
 })
-
 router.post('/send-email', (req, res, next) => {
-  console.log('here')
-
   let { name, email, topic, message } = req.body
   console.log(topic)
   console.log(name)
