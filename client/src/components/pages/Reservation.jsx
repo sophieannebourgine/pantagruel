@@ -5,7 +5,12 @@ export default function Reservation() {
     <div className="About">
       <br />
       <br />
-      <img className="img-about" src="/food-pic.jpg" alt="junot" width="100%" />
+      <img
+        className="img-about"
+        src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570695382/Restaurant-Pantagruel/food-pic.jpg.jpg"
+        alt="junot"
+        width="100%"
+      />
       <div className="who">
         <div className="weare">
           <h1>Menu</h1>

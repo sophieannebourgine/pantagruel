@@ -1,7 +1,7 @@
 import React from 'react'
 import $ from 'jquery'
 import _ from 'lodash'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export default function Parallax() {
   // ------------- VARIABLES ------------- //
@@ -84,14 +84,18 @@ export default function Parallax() {
           <p className="content-subtitle">
             <img
               className="logo-home"
-              src="/pantagruel-paris2.png"
+              src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694768/Restaurant-Pantagruel/pantagruel-paris2.png.png"
               alt="logo-home"
               width="250px"
             />
           </p>
           <p className="content-title">pantagruel</p>
           <p className="content-subtitle">
-            <img className="arrow" src="/arrow.png" alt="arrow" />
+            <img
+              className="arrow"
+              src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570696155/Restaurant-Pantagruel/arrow_ttykhh.png"
+              alt="arrow"
+            />
           </p>
         </div>
       </section>
@@ -100,7 +104,7 @@ export default function Parallax() {
         <div className="content-wrapper">
           <div className="home">
             <img
-              src="/couteau-pantagruel.jpg"
+              src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570695334/Restaurant-Pantagruel/couteau-pantagruel.jpg.jpg"
               alt=""
               width="100%"
               height="100%"
@@ -138,7 +142,7 @@ export default function Parallax() {
             </div>
 
             <img
-              src="/jason-pantagruel.jpg"
+              src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694727/Restaurant-Pantagruel/Michel_-_Galopin_Matthew_Oliver-1572_1_oosx2u.jpg"
               alt=""
               width="100%"
               height="100%"

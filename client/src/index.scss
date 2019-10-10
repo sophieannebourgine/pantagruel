@@ -235,7 +235,7 @@ a.navbar-brand {
   width: 100%;
   min-height: 100vh;
   // background-color: red;
-  background-image: url('/couteau-pantagruel.jpg');
+  background-image: url('https://res.cloudinary.com/dj0sskvvz/image/upload/v1570695334/Restaurant-Pantagruel/couteau-pantagruel.jpg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -410,7 +410,7 @@ $slide-number: 3;
     background-color: rgba(0, 0, 0, 0.3);
   }
   &:first-child {
-    background-image: url('/Monochrome.gif');
+    background-image: url('https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694677/Restaurant-Pantagruel/Monochrome.gif');
 
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
@@ -418,10 +418,10 @@ $slide-number: 3;
     }
   }
   &:nth-child(2) {
-    background-image: url('/couteau-pantagruel.jpg');
+    background-image: url('https://res.cloudinary.com/dj0sskvvz/image/upload/v1570695334/Restaurant-Pantagruel/couteau-pantagruel.jpg.jpg');
   }
   &:nth-child(3) {
-    background-image: url('/jason-pantagruel.jpg');
+    background-image: url('https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694727/Restaurant-Pantagruel/Michel_-_Galopin_Matthew_Oliver-1572_1_oosx2u.jpg');
   }
   &:nth-child(4) {
     width: '600';

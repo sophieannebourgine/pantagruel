@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import api from '../api'
+import React, { useState } from 'react'
+// import api from '../api'
 // import logo from '../logo.svg'
 import { Link, NavLink } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 function MainNavbar(props) {
-  const [user, setUser] = useState({})
+  // const [user, setUser] = useState({})
   const [shown, setShown] = useState(false)
 
   // api.isAdmin()
 
-  function handleLogoutClick(e) {
-    api.logout()
-  }
+  // function handleLogoutClick(e) {
+  //   api.logout()
+  // }
 
-  useEffect(() => {
-    const user = api.getLocalStorageUser()
-    setUser(user)
-  }, [])
+  // useEffect(() => {
+  //   const user = api.getLocalStorageUser()
+  //   setUser(user)
+  // }, [])
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark position-fixed mb-4">
@@ -30,7 +30,8 @@ function MainNavbar(props) {
       /> */}
       <Link className="navbar-brand" to="/">
         <img
-          src="./pantagruel-paris2.png"
+          // src="./pantagruel-paris2.png"
+          src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694768/Restaurant-Pantagruel/pantagruel-paris2.png.png"
           alt="pantagruel-resto-gastronomique-paris2"
           width="50px"
         />{' '}
