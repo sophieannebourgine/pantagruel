@@ -13,7 +13,16 @@
 }
 
 .img-about {
-  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  // background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -2;
 }
 
 .weare {

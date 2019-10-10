@@ -25,7 +25,7 @@ router.post('/send-email', (req, res, next) => {
       to: process.env.GMAIL_EMAIL,
       subject: topic,
       text: message,
-      html: `<b>Topic: ${topic}<br>Name: ${name}<br>Email: ${email}<br>Message: ${message}</b>`,
+      html: `<b>Sujet: ${topic}<br>Nom: ${name}<br>Email: ${email}<br>Message: ${message}</b>`,
     })
     .then(info => res.send('ok'))
     .catch(error => console.log(error))
