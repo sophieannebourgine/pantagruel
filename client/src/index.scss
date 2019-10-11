@@ -97,6 +97,8 @@ a.navbar-brand {
 .home {
   height: calc(100vh - (84px));
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
