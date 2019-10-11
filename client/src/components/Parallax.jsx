@@ -84,7 +84,7 @@ export default function Parallax() {
           <p className="content-subtitle">
             <img
               className="logo-home"
-              src="https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694768/Restaurant-Pantagruel/pantagruel-paris2.png.png"
+              src="/ezgif.com-gif-maker.gif"
               alt="logo-home"
               width="250px"
             />

@@ -1,5 +1,5 @@
 /* page test */
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+// @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 // ------------- MIXINS ------------- //
 @mixin transition($time, $property: all, $easing: ease-in) {
@@ -72,7 +72,7 @@ body {
     text-align: center;
     flex-flow: column nowrap;
     color: #fff;
-    font-family: Montserrat;
+    // font-family: Montserrat;
     text-transform: uppercase;
     transform: translateY($content-offset);
     will-change: transform;

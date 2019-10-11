@@ -8,17 +8,6 @@ function MainNavbar(props) {
   // const [user, setUser] = useState({})
   const [shown, setShown] = useState(false)
 
-  // api.isAdmin()
-
-  // function handleLogoutClick(e) {
-  //   api.logout()
-  // }
-
-  // useEffect(() => {
-  //   const user = api.getLocalStorageUser()
-  //   setUser(user)
-  // }, [])
-
   return (
     <nav className="navbar navbar-expand-sm navbar-dark position-fixed mb-4">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
@@ -63,11 +52,6 @@ function MainNavbar(props) {
               Ouverture du restaurant mi décembre 2019{' '}
             </NavLink>
           </li>
-          {/* <li className="nav-item">
-            <NavLink className="nav-link" to="/forrent">
-              For Rent
-            </NavLink>
-          </li> */}
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/aboutus">
@@ -93,58 +77,17 @@ function MainNavbar(props) {
             </NavLink>
           </li>
 
-          {/* {api.isLoggedIn() && !api.isAdmin() && (
-            <li className="nav-item">
-              {user._id && (
-                <NavLink className="nav-link" to={`/favorites/${user._id}`}>
-                  Favorites{' '}
-                </NavLink>
-              )}
-            </li>
-          )}
-          {api.isAdmin() && (
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/add-new-property">
-                Add New
-              </NavLink>
-            </li>
-          )}
-          {api.isAdmin() && (
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/manage-property">
-                Edit
-              </NavLink>
-            </li>
-          )}
+          <li className="nav-item">
+            <NavLink
+              className="nav-link btn btn-ins fab fa-instagram"
+              to="//instagram.com/restaurant.pantagruel "
+              target="_blank"
+            ></NavLink>
+          </li>
 
-          {!api.isLoggedIn() && (
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/signup">
-                Signup
-              </NavLink>
-            </li>
-          )}
-          {!api.isLoggedIn() && (
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/login">
-                Login
-              </NavLink>
-            </li>
-          )}
-          {api.isLoggedIn() && (
-            <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={handleLogoutClick}>
-                Logout
-              </Link>
-            </li>
-          )} */}
-          {/* {api.isLoggedIn() && (
-            <li className="nav-item">
-              <Link className="nav-link" to="/favorites">
-                <i className="fav fas fa-heart red"></i>
-              </Link>
-            </li>
-          )} */}
+          {/* <button type="button" className="btn btn-ins">
+            <i class="fab fa-instagram"></i>
+          </button> */}
         </ul>
       </div>
     </nav>

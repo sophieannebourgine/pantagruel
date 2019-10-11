@@ -5,7 +5,7 @@ $primary: #1c698a;
 @import url('./forrent.scss');
 @import url('./forsale.scss');
 @import url('./aboutus.scss');
-
+// @import 'bootstrap-social.less';
 @import url('./styles/parallax.scss');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 @import url('./oneproperty.scss');
@@ -410,7 +410,8 @@ $slide-number: 3;
     background-color: rgba(0, 0, 0, 0.3);
   }
   &:first-child {
-    background-image: url('https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694677/Restaurant-Pantagruel/Monochrome.gif');
+    // background-image: url('https://res.cloudinary.com/dj0sskvvz/image/upload/v1570694677/Restaurant-Pantagruel/Monochrome.gif');
+    background-image: url('/pantagruel-gif.gif');
 
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
@@ -445,7 +446,7 @@ $slide-number: 3;
     text-align: center;
     flex-flow: column nowrap;
     color: #fff;
-    font-family: Montserrat;
+    // font-family: Montserrat;
     text-transform: uppercase;
     transform: translateY($content-offset);
     will-change: transform;
